@@ -1,11 +1,10 @@
 body {
-    background-color: rgb(65, 65, 65);
+    background-image: url("testBg.png");
+    background-repeat: no-repeat;
 }
 
 #header {
-    margin-top: 20px;
     display: flex;
-    justify-content: flex-start;
     align-items: center;
     background-color: rgb(34, 34, 34);
     height: 80px;
@@ -15,21 +14,19 @@ body {
 }
 
 #pagelist {
-    outline: solid red 2px;
+    flex-wrap: nowrap;
     list-style: none;
     padding: 0;
-    margin: 0;
     display: flex;
     justify-content: space-evenly;
-    width: 75%;
-    align-items: center;
+    flex-grow: 1;
 }
 
 #pagelist li a {
-    margin: 0;
-    padding: 0;
+    text-wrap: nowrap;
     font-size: 250%;
     color: rgb(199, 199, 199);
+
     text-decoration: none;
     background-image: linear-gradient(rgb(199, 199, 199), rgb(199, 199, 199));
     background-size: 0% 2px;
@@ -44,8 +41,10 @@ body {
 }
 
 #logo {
-    height: 65px;
-    width: 300px;
-    margin-left: 1%;
-    border-radius: 8px;
+    margin-left: 15px;
+    color: rgb(199, 199, 199);
+    font-size: 180%;
+    font-weight: 500;
+    text-wrap: nowrap;
+    flex-grow: 0;
 }
