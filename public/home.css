@@ -1,0 +1,33 @@
+body {
+    background-image: url("website2.png");
+    background-repeat: no-repeat;
+}
+
+#content {
+    margin-top: 300px;
+    display: flex;
+    justify-content: center;
+}
+
+#square {   
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 250px;
+    border-radius: 10px;
+}
+
+#square #pwp {
+    font-size: 450%;
+}
+
+#square span {
+    font-size: 250%;
+    color: rgb(36, 35, 56);
+}
+
+#square img {
+    width: 50%;
+}

@@ -1,15 +1,9 @@
-body {
-    background-image: url("testBg.png");
-    background-repeat: no-repeat;
-}
-
 #header {
     display: flex;
     align-items: center;
     background-color: rgb(34, 34, 34);
     height: 80px;
     border-radius: 10px;
-    width: 100%;
     outline: solid rgba(255, 215, 0, 0.75) 1px;
 }
 
