@@ -4,12 +4,6 @@ button.style.flexGrow = 0.1;
 button.style.height = "70%";
 var header = document.querySelector("#header");
 
-window.onload = function() {
-    document.body.style.webkitTransform = "scale(1)";
-    document.body.style.msTransform = "scale(1)";
-    document.body.style.transform = "scale(1)";
-};
-
 function makeHeader(){//Used to make the header of the webpage, same thing on every html file so its done through code
     let header = document.createElement("div");
     header.id = "header";
@@ -37,8 +31,7 @@ function makeHeader(){//Used to make the header of the webpage, same thing on ev
 function fixSizes(){
     let zoom = window.devicePixelRatio;
     let nodes = document.querySelectorAll(".fixedSize")
-    console.log(window.innerWidth);
-    nodes.forEach((node) => {node.style.width = node.clientWidth*zoom+"px"});
+    nodes.forEach((node) => {node.style.width = node.clientWidth*zoom+"px"; node.style.height = node.clientHeight*zoom+"px";});
 }
 
 fixSizes();

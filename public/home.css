@@ -3,31 +3,46 @@ body {
     background-repeat: no-repeat;
 }
 
-#content {
-    margin-top: 300px;
-    display: flex;
-    justify-content: center;
+html, body {
+    height: 100%;
 }
 
-#square {   
-    width: 50%;
+#content {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-    height: 250px;
-    border-radius: 10px;
+    height: 100%;
 }
 
-#square #pwp {
-    font-size: 450%;
-}
-
-#square span {
-    font-size: 250%;
-    color: rgb(36, 35, 56);
-}
-
-#square img {
+#box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     width: 50%;
+    height: 50%;
+    background-color: #0c0e12;
+    border-radius: 12px;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#box img {
+    width: 100%;
+}
+
+#bottom {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+
+#bottom li {
+    text-decoration: none;
+    color: #8094af;
+    margin: 2px 0px;
+}
+
+#bottom ul {
+    padding: 0;
+    list-style: none;
 }
