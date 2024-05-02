@@ -7,7 +7,7 @@ var header = document.querySelector("#header");
 function makeHeader(){//Used to make the header of the webpage, same thing on every html file so its done through code
     let header = document.createElement("div");
     header.id = "header";
-    header.classList.add("fixedSize");
+    header.classList.add("fixedsize");
     let span = document.createElement("span");
     span.id = "logo";
     span.innerHTML = "Patchwork Paintings";
@@ -29,9 +29,8 @@ function makeHeader(){//Used to make the header of the webpage, same thing on ev
 }//NO LONGER USED JUST KEPT HERE
 
 function fixSizes(){
-    let zoom = window.devicePixelRatio;
-    let nodes = document.querySelectorAll(".fixedSize")
-    nodes.forEach((node) => {node.style.width = node.clientWidth*zoom+"px"; node.style.height = node.clientHeight*zoom+"px";});
+    let nodes = document.querySelectorAll(".fixedsize")
+    nodes.forEach((node) => {node.style.width = node.clientWidth+"px"; node.style.height = node.clientHeight+"px";});
 }
 
 fixSizes();
@@ -48,4 +47,4 @@ function resizeButton(event){
     }
 }
 
-window.addEventListener("resize", resizeButton);
+//window.addEventListener("resize", resizeButton);
