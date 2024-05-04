@@ -1,11 +1,12 @@
 body {
-    background-image: url("testbg.png");
+    background-image: url("website5.png");
     background-repeat: no-repeat;
     background-position: center top;
+    background-color: grey;
 }
 
 #content {
-    margin-top: 25vh;
+    margin-top: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -35,13 +36,14 @@ body {
 
 #bottom a {
     color: #8094af;
-    font-size: 150%;
+    font-size: 160%;
     text-decoration: none;
     transition: color 0.32s;
 }
 
 #bottom a:hover {
-    color: rgb(206, 201, 201)
+    color: rgb(206, 201, 201);
+    cursor: pointer;
 }
 
 #bottom li {
@@ -59,8 +61,25 @@ body {
 }
 
 #line {
-    border: 1px solid #8094af;
+    border: 5px solid #8094af;
     height: 80%;
     border-radius: 5px;
     margin: 1% 20% 0% 20%; 
+}
+
+.testbutton {
+    width: 150px;
+    height: 130px;
+}
+
+.swalpopup {
+    height: 2000px;
+    width: 3000px;
+    font-size: 600%;
+}
+
+.swalbutton {
+    height: 800px;
+    width: 1500px;
+    font-size: 600%;
 }
