@@ -29,8 +29,8 @@ function makeHeader(){//Used to make the header of the webpage, same thing on ev
 
 function fixSizes(){
     let nodes = document.querySelectorAll(".fixedsize")
-    //nodes.forEach((node) => {node.style.width = node.clientWidth+"px"; node.style.height = node.clientHeight+"px";});
-    nodes.forEach((node) => {node.style.marginTop = node.style.marginTop+"px"; console.log(node.style.marginTop);});
+    nodes.forEach((node) => {node.style.width = node.clientWidth+"px"; node.style.height = node.clientHeight+"px";});
+    //nodes.forEach((node) => {node.style.marginTop = node.style.marginTop+"px"; console.log(node.style.marginTop);});
 }
 
 function onResize(){
@@ -52,18 +52,21 @@ function onResize(){
 window.addEventListener("resize", onResize);
 
 async function onButtonClick(){
-    let width = window.innerWidth*0.5;
-    let height = window.innerHeight*0.4;
-    const { value: ipAddress } = await Swal.fire({
-    input : "text", 
-    background : "#AAAAAA", 
+    const { value: password } = await Swal.fire({
     customClass: {
         popup: "swalpopup",
         confirmButton : "swalbutton",
-        input : "swalinput"
-      },
-    position: "center"
+        input : "swalinput",
+        inputLabel : "swalinputlabel"
+        },
+    input : "password", 
+    inputLabel : "https://www.youtube.com/watch?v=dQw4w9WgXcQ",//HIDDEN TEXT
+    confirmButtonColor : "#bb0000",
+    background: "#111111",
+    animation: false
     })
-    alert(ipAddress);
+    if(password == "amogus"){
+        window.location.href = "glorb.html";
+    }
 }
 button.addEventListener("click", onButtonClick);

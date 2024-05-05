@@ -1,7 +1,7 @@
 body {
     background-image: url("website5.png");
-    background-repeat: no-repeat;
     background-position: center top;
+    background-repeat: no-repeat;
     background-color: grey;
 }
 
@@ -76,10 +76,18 @@ body {
     height: 2000px;
     width: 3000px;
     font-size: 600%;
+    border-radius: 15px;
 }
 
-.swalbutton {
-    height: 800px;
-    width: 1500px;
-    font-size: 600%;
+.swalinput {
+    color: red;
+    border: solid 3px red;
+}
+
+.swalinput:focus{
+    border: solid 3px red;
+}
+
+.swalinputlabel {
+    color : #111111;
 }
