@@ -8,7 +8,7 @@ body {
 #content {
     margin-top: 250px;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -67,9 +67,16 @@ body {
     margin: 1% 20% 0% 20%; 
 }
 
-.testbutton {
+#passwordbutton {
     width: 150px;
     height: 130px;
+}
+
+#flowerbutton {
+    width: 150px;
+    height: 100px;
+    background: transparent;
+    border: none;
 }
 
 .swalpopup {

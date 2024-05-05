@@ -1,8 +1,3 @@
-var buttonVisible = false;
-var button = document.createElement("button");
-button.classList.add("testbutton");
-var div = document.querySelector("#content");
-
 function makeHeader(){//Used to make the header of the webpage, same thing on every html file so its done through code
     let header = document.createElement("div");
     header.id = "header";
@@ -34,24 +29,16 @@ function fixSizes(){
 }
 
 function onResize(){
-    if(window.devicePixelRatio < 0.3 && !buttonVisible){
-        div.style.justifyContent = "flex-start";
-        div.insertBefore(button, div.firstChild);
-        buttonVisible = true;
-    }
-    else if (window.devicePixelRatio >= 0.3 && buttonVisible){
-        div.style.justifyContent = "center";
-        div.removeChild(button);
-        buttonVisible = false;
-    }
-    if(buttonVisible){//I have no idea about this math I am sorry if you are reading this later on
-        button.style.marginLeft = window.innerWidth/2-3120+"px";
-        button.style.marginRight = 3120-600+"px";
-    }
+    //password button
+    document.querySelector("#passwordbutton").style.marginLeft = window.innerWidth/2-3120+"px";
+    document.querySelector("#passwordbutton").style.marginRight = 3120-610+"px";//for putting the box in the middle
+    //flower button
+    document.querySelector("#flowerbutton").style.marginLeft = window.innerWidth/2+590+"px";
 }
 window.addEventListener("resize", onResize);
+onResize();
 
-async function onButtonClick(){
+async function onPassButtonClick(){
     const { value: password } = await Swal.fire({
     customClass: {
         popup: "swalpopup",
@@ -69,4 +56,10 @@ async function onButtonClick(){
         window.location.href = "glorb.html";
     }
 }
-button.addEventListener("click", onButtonClick);
+document.querySelector("#passwordbutton").addEventListener("click", onPassButtonClick);
+
+function flowerButtonClick(){
+    window.open("website5.png");
+}
+
+document.querySelector("#flowerbutton").addEventListener("click", flowerButtonClick);
