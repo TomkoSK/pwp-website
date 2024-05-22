@@ -3,6 +3,7 @@ body {
     background-position: center top;
     background-repeat: no-repeat;
     background-color: grey;
+    background-size: 6140px 3040px;
 }
 
 #content {
@@ -20,7 +21,7 @@ body {
     border-radius: 12px;
     flex-direction: column;
     justify-content: space-evenly;
-    width: 900px;
+    width: 720px;
 }
 
 #box img {

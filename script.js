@@ -30,8 +30,8 @@ function fixSizes(){
 
 function onResize(){
     //password button
-    document.querySelector("#passwordbutton").style.marginLeft = window.innerWidth/2-3120+"px";
-    document.querySelector("#passwordbutton").style.marginRight = 3120-610+"px";//for putting the box in the middle
+    document.querySelector("#passwordbutton").style.marginLeft = window.innerWidth/2-3120+400+"px";
+    document.querySelector("#passwordbutton").style.marginRight = 3120-940+"px";//for putting the box in the middle
     //flower button
     document.querySelector("#flowerbutton").style.marginLeft = window.innerWidth/2+590+"px";
 }
