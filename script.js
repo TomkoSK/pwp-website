@@ -46,7 +46,7 @@ async function onPassButtonClick(){
         input : "swalinput",
         inputLabel : "swalinputlabel"
         },
-    input : "password", 
+    input : "text", 
     inputLabel : "https://www.youtube.com/watch?v=dQw4w9WgXcQ",//HIDDEN TEXT
     confirmButtonColor : "#bb0000",
     background: "#111111",
