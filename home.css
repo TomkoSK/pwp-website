@@ -2,7 +2,9 @@ body {
     background-image: url("website0.png");
     background-position: center top;
     background-repeat: no-repeat;
-    background-color: grey;
+    background-color: rgb(0, 0, 0);
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 #content {
@@ -74,7 +76,8 @@ body {
 
 #flowerbutton {
     width: 150px;
-    height: 100px;
+    height: 130px;
+    align-self: flex-end;
     background: transparent;
     border: none;
 }
@@ -97,4 +100,60 @@ body {
 
 .swalinputlabel {
     color : #111111;
+}
+
+.popup-background {
+    position: absolute;
+    left: -25vw;
+    top: -25vh;
+    z-index: 1;
+    height: 150vh;
+    width: 150vw;
+    background-color: rgba(46, 46, 46, 0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-background:focus{
+    background-color: rgba(46, 46, 46, 0.6);
+}
+
+.popup-box {
+    z-index: 2;
+    background-color: rgb(0, 0, 0);
+    width: 50vw;
+    height: 30vw;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.popup-input {
+    border: solid 2px red;
+    background-color: black;
+    color: white;
+    position: relative;
+    width: 90%;
+    height: 15%;
+    font-size: 1.4vw;
+}
+
+.popup-input:focus{
+    outline: none;
+}
+
+.popup-button{
+    margin-top: 15%;
+    width: 20%;
+    height: 10%;
+    background-color: rgb(151, 0, 0);
+    border: solid 2px rgb(80, 0, 0);
+    font-size: 1.4vw;
+}
+
+.popup-button:hover{
+    border: solid 2px rgb(143, 79, 79);
 }

@@ -1,0 +1,93 @@
+body {
+    background-color: rgb(39, 37, 37);
+}
+
+.title-div{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+#title {
+    color: white;
+    font-size: 400%;
+}
+
+span {
+    color: rgb(202, 202, 202);
+    font-size: 300%;
+}
+
+.email-div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.email-div p {
+    font-size: 130%;
+    color: rgb(202, 202, 202);
+}
+
+.media-div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.media-icons-div {
+    display: flex;
+    gap: 50px;
+}
+
+.media-icons-div a {
+    display: block;
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+}
+
+#twitter {
+    background-image: url("twitterblack.png");
+}
+
+#twitter:hover {
+    background-image: url("twitter.png");
+}
+
+#youtube {
+    background-image: url("ytblack.png");
+}
+
+#youtube:hover {
+    background-image: url("yt.png");
+}
+
+.patreon-div {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.patreon-icon-div {
+    margin-top: 15px;
+}
+
+#patreon {
+    display: block;
+    background-size: cover;
+    width: 128px;
+    height: 128px;
+    -webkit-transition: background-image 0.2s ease-in-out;
+    transition: background-image 0.2s ease-in-out;
+    background-image: url("patreonblack.png");
+}
+
+#patreon:hover {
+    background-image: url("patreon.png");
+}
