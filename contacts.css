@@ -1,5 +1,21 @@
 body {
+    background-color: rgb(110, 110, 110);
+}
+
+#outer-frame {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    width: 800px;
+    height: calc(98vh - 95px);
+    min-height: 740px;
     background-color: rgb(39, 37, 37);
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .title-div{
@@ -26,7 +42,7 @@ span {
 }
 
 .email-div p {
-    font-size: 130%;
+    font-size: 160%;
     color: rgb(202, 202, 202);
 }
 
