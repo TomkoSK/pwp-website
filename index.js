@@ -76,12 +76,19 @@ function onResize(){
     //flower button
     document.querySelector("#flowerbutton").style.marginLeft = 150+"px";
 }
+
 window.addEventListener("resize", onResize);
 onResize();
 
 function onPassButtonClick(){
     let popup = new Popup();
-    popup.getAnswer.then((inputValue) => {console.log("this was said: "+inputValue)}).catch(() => {console.log("quit")});
+    popup.getAnswer.then((inputValue) => {
+        if(inputValue == "amogus"){
+            window.location.href = "glorb.html";
+        }
+    })
+    .catch(() => {
+    });
 }
 
 document.querySelector("#passwordbutton").addEventListener("click", onPassButtonClick);
