@@ -19,13 +19,16 @@ body {
     border-radius: 10px;
     margin-top: 20px;
     padding: 25px;
+    padding-bottom: 0;
+    resize: vertical;
+    overflow: hidden;
 }
 
 .download h1 {
     margin: 0;
     margin-bottom: 18px;
     color: rgb(22, 22, 22);
-    font-size: 230%;
+    font-size: 2.3rem;
 }
 
 .download ul {
@@ -42,7 +45,7 @@ body {
     background-color: rgb(51, 51, 51);
     border: solid 2px rgb(51, 51, 51);
     border-radius: 15px;
-    font-size: 150%;
+    font-size: 1.5rem;
     padding: 10px;
     text-decoration: none;
     color: #8094af;
@@ -56,6 +59,6 @@ body {
 
 .download span {
     margin-left: 5px;
-    font-size: 155%;
+    font-size: 1.5rem;
     color: rgb(201, 201, 201);
 }

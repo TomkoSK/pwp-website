@@ -82,24 +82,8 @@ body {
     border: none;
 }
 
-.swalpopup {
-    height: 2000px;
-    width: 3000px;
-    font-size: 600%;
-    border-radius: 15px;
-}
-
-.swalinput {
-    color: red;
-    border: solid 3px red;
-}
-
-.swalinput:focus{
-    border: solid 3px red;
-}
-
-.swalinputlabel {
-    color : #111111;
+#flowerbutton:hover {
+    cursor: pointer;
 }
 
 .popup-background {

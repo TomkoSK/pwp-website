@@ -1,0 +1,50 @@
+body {
+    background-color: rgb(110, 110, 110);
+}
+
+#outer-frame {
+    display: flex;
+    justify-content: center;
+}
+
+#content {
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+    width: 900px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+article {
+    width: 800px;
+    border-radius: 8px;
+}
+
+article h2 {
+    color: rgb(218, 218, 218);
+    padding-bottom: 8px;
+    font-size: 250%;
+    background-image: linear-gradient(rgb(207, 207, 207), rgb(207, 207, 207));
+    background-position: 0% 100%;
+    background-size: 100% 4px;
+    background-repeat: no-repeat;
+    margin-bottom: 15px;
+    font-weight: normal;
+}
+
+article time {
+    display: block;
+    font-style: italic;
+    margin-bottom: 13px;
+    color: rgb(202, 202, 202);
+}
+
+article img {
+    width: 770px;
+}
+
+article p {
+    font-size: 120%;
+    color: rgb(202, 202, 202);
+}
