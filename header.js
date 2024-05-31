@@ -14,7 +14,7 @@ function makeHeader(){//Used to make the header of the webpage, same thing on ev
     pagelist = document.createElement("ul");
     pagelist.id = "pagelist";
     let pageNames = ["Home", "Downloads", "Commissions", "News", "About Us", "Contact Us"];
-    let pageLinks = ["index.html", "downloads.html", "#wip", "news.html", "#wip", "contacts.html"];
+    let pageLinks = ["index.html", "game.html", "#wip", "news.html", "#wip", "contacts.html"];
     for(let i = 0; i < 6; i++){
         let item = document.createElement("li");
         let link = document.createElement("a");

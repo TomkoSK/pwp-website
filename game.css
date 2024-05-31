@@ -1,0 +1,13 @@
+body {
+    background-color: rgb(102, 102, 102);
+} 
+
+#frame {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+iframe {
+    border: solid 2px rgb(37, 37, 37);
+}
