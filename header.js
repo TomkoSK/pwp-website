@@ -2,6 +2,7 @@ var pagelist;
 var menu;
 var showingMenu = false;
 var scrollWidth = null;
+var extraHamburgerButton = false;
 
 function makeHeader(){//Used to make the header of the webpage, same thing on every html file so its done through code
     let header = document.createElement("div");
@@ -38,6 +39,11 @@ function makeHeader(){//Used to make the header of the webpage, same thing on ev
         href.href = pageLinks[i];
         div.appendChild(href);
     }
+    let href = document.createElement("a");
+    href.id = "secret-hamburger-button"
+    href.textContent = "???";
+    href.href = "glorb.html";
+    div.appendChild(href);
     menu.appendChild(img);
     menu.appendChild(div);
 }
@@ -67,16 +73,40 @@ const onWindowResize = () => {
         }
     }
     else{
-        if(getPagelistItemsGap() < 11){//these 2 numbers are sort of similiar almost producing the same result
+        if(getPagelistItemsGap() < 20){//these 2 numbers are sort of similiar almost producing the same result
             scrollWidth = header.scrollWidth;
         }
     }
 }
 
 if(header.scrollWidth > header.clientWidth){
-scrollWidth = header.scrollWidth+93.33;//these 2 numbers are sort of similiar almost producing the same result
+scrollWidth = header.scrollWidth+93.33/window.devicePixelRatio;//these 2 numbers are sort of similiar almost producing the same result
 }
 onWindowResize();
 onWindowResize();
+
+/*
+function hamburgerCheck(e){//Checks for whether the extra hamburger button menu should be added
+    if(document.querySelector("#dropdown-content").getBoundingClientRect().bottom > window.innerHeight){
+        if(!extraHamburgerButton){
+            extraHamburgerButton = true
+            let href = document.createElement("a");
+            href.id = "secret-hamburger-button"
+            href.textContent = "???";
+            href.href = "glorb.html";
+            document.querySelector("#dropdown-content").appendChild(href);
+        }
+    }
+    else {
+        if(extraHamburgerButton && e.type == "resize"){
+            extraHamburgerButton = false
+            document.querySelector("#dropdown-content").removeChild(document.querySelector("#secret-hamburger-button"))
+        }
+    }
+}
+
+window.addEventListener("scroll", hamburgerCheck)
+window.addEventListener("resize", hamburgerCheck)
+*/
 
 window.addEventListener("resize", onWindowResize)
