@@ -1,5 +1,9 @@
 body {
     background-color: rgb(110, 110, 110);
+    background-image: url("bgtest.png");
+    background-repeat: no-repeat;
+    background-size: auto 100vh;
+    background-position: 50% 0%;
 }
 
 #outer-frame {
