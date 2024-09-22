@@ -21,7 +21,7 @@ body {
 }
 
 article {
-    width: 800px;
+    width: 770px;
     border-radius: 8px;
 }
 
@@ -51,4 +51,17 @@ article img {
 article p {
     font-size: 120%;
     color: rgb(202, 202, 202);
+}
+
+#example-amogus {
+    width: 770px;
+    height: 432.2px;
+}
+
+#amogus-image {
+    transition: opacity 2s;
+}
+
+.invisible {
+    opacity: 0;
 }
